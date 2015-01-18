@@ -86,7 +86,7 @@ def shorten(a, verbose=False):
 			
 		if isClipboardAvailable:
 			process = subprocess.Popen(clipboardCommand, stdout=PIPE, stdin=PIPE, stderr=PIPE);
-			process.communicate(input=(outJSON["short-url"] + '\n'));
+			process.communicate(input=(outJSON["short-url"]));
 
 			if False:
 				print "Shortlink: " + outJSON["short-url"];
