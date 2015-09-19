@@ -84,6 +84,7 @@ def shorten(longURL, shortName=''):
 		outJSON = json.loads(output);
 	except:
 		message("Error: output can't be parsed");
+		
 		return 2;
 
 	if "error" in outJSON:
